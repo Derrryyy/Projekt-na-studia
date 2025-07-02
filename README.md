@@ -1,2 +1,11 @@
 # Mój Projekt
-oto kilka linijek tekstu
+
+# Opis
+Projekt napisany w java
+
+# Technologie
+- Java
+- Git i GitHub
+
+# Autor 
+Oskar
