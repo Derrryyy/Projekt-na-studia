@@ -24,5 +24,5 @@ jobs:
         run: chmod +x src/test_add.sh
 
       - name: Run test
-        run: src/test_add.sh
+        run: java -cp . Kalkulator add 2 3
 

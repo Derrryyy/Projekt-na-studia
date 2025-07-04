@@ -1,10 +1,12 @@
-result=$(java Kalkulator add 2 3)
-echo "Wynik='$result'"
+#!/bin/bash
+result=$(java -cp . Kalkulator add 2 3)
 expected=5
+
 if [ "$result" -eq "$expected" ]; then
-echo "Test add(2,3) zdany"
-exit 0
+  echo "Test passed"
+  exit 0
 else
-echo "Test add(2,3) oblany: got '$result', powinno wyjść $expceted"
-exit 1
+  echo "Test failed, got: '$result'"
+  exit 1
 fi
+
