@@ -18,11 +18,14 @@ jobs:
           distribution: 'temurin'
 
       - name: Compile Kalkulator.java
-        run: javac src/Kalkulator.java
+        run: |
+          mkdir -p build
+          javac -d build src/Kalkulator.java
 
       - name: Make test script executable
         run: chmod +x src/test_add.sh
 
       - name: Run test
-        run: java -cp . Kalkulator add 2 3
+        run: bash src/test_add.sh
+
 

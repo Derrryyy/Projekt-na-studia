@@ -1,5 +1,5 @@
 #!/bin/bash
-result=$(java -cp . Kalkulator add 2 3)
+result=$(java -cp build Kalkulator add 2 3)
 expected=5
 
 if [ "$result" -eq "$expected" ]; then
