@@ -18,8 +18,8 @@ jobs:
           distribution: 'temurin'
 
       - name: Compile Kalkulator.java
-        run: javac Kalkulator.java
+        run: javac src/Kalkulator.java
 
       - name: Run test
-        run: ./test_add.sh
+        run: src/test_add.sh
 
