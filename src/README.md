@@ -1,0 +1,2 @@
+Funkcja
+-Kalkulator dodawania
