@@ -20,6 +20,9 @@ jobs:
       - name: Compile Kalkulator.java
         run: javac src/Kalkulator.java
 
+      - name: Make test script executable
+        run: chmod +x src/test_add.sh
+
       - name: Run test
         run: src/test_add.sh
 
